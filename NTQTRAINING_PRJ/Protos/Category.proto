@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "NTQTRAINING_PRJ.Protos";
+
+
+service CategoriesSevices {
+	rpc Create(Category) returns(Category);
+	rpc Delete(CategoryId) returns(CategoryEmpty);
+	rpc GetAll(CategoryEmpty) returns(ListCategory);
+	rpc GetCategoryById(CategoryId) returns(Category);
+	rpc Update(Category) returns(Category);
+}
+
+message CategoryEmpty {}
+
+message Category
+{
+	int32 Id=1;
+	string Name=2;
+	string TagName=3;
+	bool Active=4;
+ 	google.protobuf.Timestamp CreatedDate = 5;
+	google.protobuf.Timestamp UpdatedDate = 6;
+}
+
+message CategoryId{
+	int32 Id=1;
+}
+
+message ListCategory{
+	repeated Category items=1;
+}

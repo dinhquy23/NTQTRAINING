@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "NTQTRAINING_PRJ.Protos";
+import "google/protobuf/timestamp.proto";
+
+service ProductsServices{
+	rpc Create(Product) returns(Product);
+	rpc Delete(ProductId) returns(ProductEmpty);
+	rpc GetAll(ProductEmpty) returns(ListProduct);
+	rpc Update(Product) returns(Product);
+}
+
+message ProductEmpty {}
+
+message Product
+{
+	int32 Id=1;
+	string Name=2;
+	string TagName=3;
+	bool Active=4;
+	int32 CategoryId=5;
+	google.protobuf.Timestamp CreatedDate = 6;
+	google.protobuf.Timestamp UpdatedDate = 7;
+}
+
+message ProductId{
+	int32 Id=1;
+}
+
+message ListProduct{
+	Product items=1;
+}
