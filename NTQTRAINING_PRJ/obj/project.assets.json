@@ -2464,23 +2464,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quy.nguyen\\.nuget\\packages\\": {},
+    "C:\\Users\\dinhq\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\NTQ_Fresher\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ.csproj",
+      "projectUniqueName": "D:\\NTQ_Fresher\\NTQTRAINING\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ.csproj",
       "projectName": "NTQTRAINING_PRJ",
-      "projectPath": "Z:\\NTQ_Fresher\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ.csproj",
-      "packagesPath": "C:\\Users\\quy.nguyen\\.nuget\\packages\\",
-      "outputPath": "Z:\\NTQ_Fresher\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ\\obj\\",
+      "projectPath": "D:\\NTQ_Fresher\\NTQTRAINING\\NTQTRAINING_PRJ\\NTQTRAINING_PRJ.csproj",
+      "packagesPath": "C:\\Users\\dinhq\\.nuget\\packages\\",
+      "outputPath": "D:\\NTQ_Fresher\\NTQTRAINING\\NTQTRAINING_PRJ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\quy.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dinhq\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2552,7 +2552,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

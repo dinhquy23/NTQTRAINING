@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "WinFormsClient.Protos";
+option csharp_namespace = "NTQTRAINING_PRJ.Protos";
 import "google/protobuf/timestamp.proto";
 
 service ProductDetailsServices{
