@@ -15,7 +15,6 @@ namespace NTQTRAINING_PRJ.Services
         {
             NtqTrainingContext = ntqtrainingcontext;
         }
-
         public override Task<Protos.ListProduct> GetAll(Protos.ProductEmpty request, ServerCallContext context)
         {
             ListProduct listProduct = new ListProduct();
