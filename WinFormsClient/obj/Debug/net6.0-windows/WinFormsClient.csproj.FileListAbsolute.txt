@@ -44,3 +44,4 @@ Z:\NTQ_Fresher\NTQTRAINING\WinFormsClient\obj\Debug\net6.0-windows\refint\WinFor
 Z:\NTQ_Fresher\NTQTRAINING\WinFormsClient\obj\Debug\net6.0-windows\WinFormsClient.pdb
 Z:\NTQ_Fresher\NTQTRAINING\WinFormsClient\obj\Debug\net6.0-windows\WinFormsClient.genruntimeconfig.cache
 Z:\NTQ_Fresher\NTQTRAINING\WinFormsClient\obj\Debug\net6.0-windows\ref\WinFormsClient.dll
+D:\NTQ_Fresher\NTQTRAINING\WinFormsClient\obj\Debug\net6.0-windows\WinFormsClient.frmProduct.resources

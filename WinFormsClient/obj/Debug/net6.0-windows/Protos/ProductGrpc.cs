@@ -48,6 +48,8 @@ namespace WinFormsClient {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::WinFormsClient.Product> __Marshaller_Product = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.Product.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::WinFormsClient.ProductResponseResult> __Marshaller_ProductResponseResult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductResponseResult.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::WinFormsClient.ProductId> __Marshaller_ProductId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::WinFormsClient.ProductEmpty> __Marshaller_ProductEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductEmpty.Parser));
@@ -55,20 +57,20 @@ namespace WinFormsClient {
     static readonly grpc::Marshaller<global::WinFormsClient.ListProduct> __Marshaller_ListProduct = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ListProduct.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.Product> __Method_Create = new grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.Product>(
+    static readonly grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.ProductResponseResult> __Method_Create = new grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.ProductResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
         __Marshaller_Product,
-        __Marshaller_Product);
+        __Marshaller_ProductResponseResult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::WinFormsClient.ProductId, global::WinFormsClient.ProductEmpty> __Method_Delete = new grpc::Method<global::WinFormsClient.ProductId, global::WinFormsClient.ProductEmpty>(
+    static readonly grpc::Method<global::WinFormsClient.ProductId, global::WinFormsClient.ProductResponseResult> __Method_Delete = new grpc::Method<global::WinFormsClient.ProductId, global::WinFormsClient.ProductResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
         __Marshaller_ProductId,
-        __Marshaller_ProductEmpty);
+        __Marshaller_ProductResponseResult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::WinFormsClient.ProductEmpty, global::WinFormsClient.ListProduct> __Method_GetAll = new grpc::Method<global::WinFormsClient.ProductEmpty, global::WinFormsClient.ListProduct>(
@@ -79,12 +81,12 @@ namespace WinFormsClient {
         __Marshaller_ListProduct);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.Product> __Method_Update = new grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.Product>(
+    static readonly grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.ProductResponseResult> __Method_Update = new grpc::Method<global::WinFormsClient.Product, global::WinFormsClient.ProductResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_Product,
-        __Marshaller_Product);
+        __Marshaller_ProductResponseResult);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -120,42 +122,42 @@ namespace WinFormsClient {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.Product Create(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductResponseResult Create(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.Product Create(global::WinFormsClient.Product request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductResponseResult Create(global::WinFormsClient.Product request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.Product> CreateAsync(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> CreateAsync(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.Product> CreateAsync(global::WinFormsClient.Product request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> CreateAsync(global::WinFormsClient.Product request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.ProductEmpty Delete(global::WinFormsClient.ProductId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductResponseResult Delete(global::WinFormsClient.ProductId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.ProductEmpty Delete(global::WinFormsClient.ProductId request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductResponseResult Delete(global::WinFormsClient.ProductId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductEmpty> DeleteAsync(global::WinFormsClient.ProductId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> DeleteAsync(global::WinFormsClient.ProductId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductEmpty> DeleteAsync(global::WinFormsClient.ProductId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> DeleteAsync(global::WinFormsClient.ProductId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
@@ -180,22 +182,22 @@ namespace WinFormsClient {
         return CallInvoker.AsyncUnaryCall(__Method_GetAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.Product Update(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductResponseResult Update(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.Product Update(global::WinFormsClient.Product request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductResponseResult Update(global::WinFormsClient.Product request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.Product> UpdateAsync(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> UpdateAsync(global::WinFormsClient.Product request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.Product> UpdateAsync(global::WinFormsClient.Product request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductResponseResult> UpdateAsync(global::WinFormsClient.Product request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

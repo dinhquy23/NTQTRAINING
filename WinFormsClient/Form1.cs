@@ -24,7 +24,7 @@ namespace WinFormsClient
             dgvCategory.DataSource = ToDataTable(listCategory);
         }
 
-        private DataTable ToDataTable(ListCategory listData)
+        public DataTable ToDataTable(ListCategory listData)
         {
             DataTable dt = new DataTable();
 

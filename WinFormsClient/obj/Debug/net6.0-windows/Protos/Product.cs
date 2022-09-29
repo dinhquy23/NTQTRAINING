@@ -32,11 +32,12 @@ namespace WinFormsClient {
             "ZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiPwoVUHJvZHVj",
             "dFJlc3BvbnNlUmVzdWx0EhYKBGl0ZW0YASABKAsyCC5Qcm9kdWN0Eg4KBlJl",
             "c3VsdBgCIAEoCCIXCglQcm9kdWN0SWQSCgoCSWQYASABKAUiJgoLTGlzdFBy",
-            "b2R1Y3QSFwoFaXRlbXMYASADKAsyCC5Qcm9kdWN0MpoBChBQcm9kdWN0c1Nl",
-            "cnZpY2VzEhwKBkNyZWF0ZRIILlByb2R1Y3QaCC5Qcm9kdWN0EiMKBkRlbGV0",
-            "ZRIKLlByb2R1Y3RJZBoNLlByb2R1Y3RFbXB0eRIlCgZHZXRBbGwSDS5Qcm9k",
-            "dWN0RW1wdHkaDC5MaXN0UHJvZHVjdBIcCgZVcGRhdGUSCC5Qcm9kdWN0Gggu",
-            "UHJvZHVjdEIRqgIOV2luRm9ybXNDbGllbnRiBnByb3RvMw=="));
+            "b2R1Y3QSFwoFaXRlbXMYASADKAsyCC5Qcm9kdWN0Mr8BChBQcm9kdWN0c1Nl",
+            "cnZpY2VzEioKBkNyZWF0ZRIILlByb2R1Y3QaFi5Qcm9kdWN0UmVzcG9uc2VS",
+            "ZXN1bHQSLAoGRGVsZXRlEgouUHJvZHVjdElkGhYuUHJvZHVjdFJlc3BvbnNl",
+            "UmVzdWx0EiUKBkdldEFsbBINLlByb2R1Y3RFbXB0eRoMLkxpc3RQcm9kdWN0",
+            "EioKBlVwZGF0ZRIILlByb2R1Y3QaFi5Qcm9kdWN0UmVzcG9uc2VSZXN1bHRC",
+            "EaoCDldpbkZvcm1zQ2xpZW50YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

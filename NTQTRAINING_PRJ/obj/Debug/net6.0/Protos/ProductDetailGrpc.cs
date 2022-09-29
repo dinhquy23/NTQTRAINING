@@ -48,6 +48,8 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetail> __Marshaller_ProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetail.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> __Marshaller_ProductDetailResponseResult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetailId> __Marshaller_ProductDetailId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetailId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> __Marshaller_ProductDetailEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty.Parser));
@@ -55,20 +57,20 @@ namespace NTQTRAINING_PRJ.Protos {
     static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ListProductDetail> __Marshaller_ListProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ListProductDetail.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail> __Method_Create = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(
+    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> __Method_Create = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
         __Marshaller_ProductDetail,
-        __Marshaller_ProductDetail);
+        __Marshaller_ProductDetailResponseResult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> __Method_Delete = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty>(
+    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> __Method_Delete = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
         __Marshaller_ProductDetailId,
-        __Marshaller_ProductDetailEmpty);
+        __Marshaller_ProductDetailResponseResult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty, global::NTQTRAINING_PRJ.Protos.ListProductDetail> __Method_GetAll = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty, global::NTQTRAINING_PRJ.Protos.ListProductDetail>(
@@ -79,12 +81,12 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ListProductDetail);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail> __Method_Update = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(
+    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> __Method_Update = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_ProductDetail,
-        __Marshaller_ProductDetail);
+        __Marshaller_ProductDetailResponseResult);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -97,13 +99,13 @@ namespace NTQTRAINING_PRJ.Protos {
     public abstract partial class ProductDetailsServicesBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetail> Create(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> Create(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> Delete(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> Delete(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -115,7 +117,7 @@ namespace NTQTRAINING_PRJ.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetail> Update(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult> Update(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -141,10 +143,10 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductDetailsServicesBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Create, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(serviceImpl.Create));
-      serviceBinder.AddMethod(__Method_Delete, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty>(serviceImpl.Delete));
+      serviceBinder.AddMethod(__Method_Create, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(serviceImpl.Create));
+      serviceBinder.AddMethod(__Method_Delete, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(serviceImpl.Delete));
       serviceBinder.AddMethod(__Method_GetAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty, global::NTQTRAINING_PRJ.Protos.ListProductDetail>(serviceImpl.GetAll));
-      serviceBinder.AddMethod(__Method_Update, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(serviceImpl.Update));
+      serviceBinder.AddMethod(__Method_Update, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetailResponseResult>(serviceImpl.Update));
     }
 
   }

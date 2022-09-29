@@ -32,19 +32,22 @@ namespace WinFormsClient {
             "cm90b2J1Zi5UaW1lc3RhbXASDgoGTWFkZUJ5GAYgASgJEhEKCVByb2R1Y3RJ",
             "ZBgHIAEoBRIvCgtDcmVhdGVkRGF0ZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1",
             "Zi5UaW1lc3RhbXASLwoLVXBkYXRlZERhdGUYCSABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wIh0KD1Byb2R1Y3REZXRhaWxJZBIKCgJJZBgBIAEo",
-            "BSIyChFMaXN0UHJvZHVjdERldGFpbBIdCgVpdGVtcxgBIAMoCzIOLlByb2R1",
-            "Y3REZXRhaWwy0AEKFlByb2R1Y3REZXRhaWxzU2VydmljZXMSKAoGQ3JlYXRl",
-            "Eg4uUHJvZHVjdERldGFpbBoOLlByb2R1Y3REZXRhaWwSLwoGRGVsZXRlEhAu",
-            "UHJvZHVjdERldGFpbElkGhMuUHJvZHVjdERldGFpbEVtcHR5EjEKBkdldEFs",
-            "bBITLlByb2R1Y3REZXRhaWxFbXB0eRoSLkxpc3RQcm9kdWN0RGV0YWlsEigK",
-            "BlVwZGF0ZRIOLlByb2R1Y3REZXRhaWwaDi5Qcm9kdWN0RGV0YWlsQhGqAg5X",
-            "aW5Gb3Jtc0NsaWVudGIGcHJvdG8z"));
+            "dG9idWYuVGltZXN0YW1wIksKG1Byb2R1Y3REZXRhaWxSZXNwb25zZVJlc3Vs",
+            "dBIcCgRpdGVtGAEgASgLMg4uUHJvZHVjdERldGFpbBIOCgZyZXN1bHQYAiAB",
+            "KAgiHQoPUHJvZHVjdERldGFpbElkEgoKAklkGAEgASgFIjIKEUxpc3RQcm9k",
+            "dWN0RGV0YWlsEh0KBWl0ZW1zGAEgAygLMg4uUHJvZHVjdERldGFpbDL1AQoW",
+            "UHJvZHVjdERldGFpbHNTZXJ2aWNlcxI2CgZDcmVhdGUSDi5Qcm9kdWN0RGV0",
+            "YWlsGhwuUHJvZHVjdERldGFpbFJlc3BvbnNlUmVzdWx0EjgKBkRlbGV0ZRIQ",
+            "LlByb2R1Y3REZXRhaWxJZBocLlByb2R1Y3REZXRhaWxSZXNwb25zZVJlc3Vs",
+            "dBIxCgZHZXRBbGwSEy5Qcm9kdWN0RGV0YWlsRW1wdHkaEi5MaXN0UHJvZHVj",
+            "dERldGFpbBI2CgZVcGRhdGUSDi5Qcm9kdWN0RGV0YWlsGhwuUHJvZHVjdERl",
+            "dGFpbFJlc3BvbnNlUmVzdWx0QhGqAg5XaW5Gb3Jtc0NsaWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetailEmpty), global::WinFormsClient.ProductDetailEmpty.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetail), global::WinFormsClient.ProductDetail.Parser, new[]{ "Id", "Price", "Color", "StartingDate", "ClosingDate", "MadeBy", "ProductId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetailResponseResult), global::WinFormsClient.ProductDetailResponseResult.Parser, new[]{ "Item", "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetailId), global::WinFormsClient.ProductDetailId.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ListProductDetail), global::WinFormsClient.ListProductDetail.Parser, new[]{ "Items" }, null, null, null, null)
           }));
@@ -726,6 +729,241 @@ namespace WinFormsClient {
 
   }
 
+  public sealed partial class ProductDetailResponseResult : pb::IMessage<ProductDetailResponseResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProductDetailResponseResult> _parser = new pb::MessageParser<ProductDetailResponseResult>(() => new ProductDetailResponseResult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProductDetailResponseResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductDetailResponseResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductDetailResponseResult(ProductDetailResponseResult other) : this() {
+      item_ = other.item_ != null ? other.item_.Clone() : null;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductDetailResponseResult Clone() {
+      return new ProductDetailResponseResult(this);
+    }
+
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 1;
+    private global::WinFormsClient.ProductDetail item_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::WinFormsClient.ProductDetail Item {
+      get { return item_; }
+      set {
+        item_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private bool result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProductDetailResponseResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProductDetailResponseResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Item, other.Item)) return false;
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (item_ != null) hash ^= Item.GetHashCode();
+      if (Result != false) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
+      if (Result != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
+      if (Result != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (item_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
+      }
+      if (Result != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProductDetailResponseResult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.item_ != null) {
+        if (item_ == null) {
+          Item = new global::WinFormsClient.ProductDetail();
+        }
+        Item.MergeFrom(other.Item);
+      }
+      if (other.Result != false) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (item_ == null) {
+              Item = new global::WinFormsClient.ProductDetail();
+            }
+            input.ReadMessage(Item);
+            break;
+          }
+          case 16: {
+            Result = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (item_ == null) {
+              Item = new global::WinFormsClient.ProductDetail();
+            }
+            input.ReadMessage(Item);
+            break;
+          }
+          case 16: {
+            Result = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class ProductDetailId : pb::IMessage<ProductDetailId>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -740,7 +978,7 @@ namespace WinFormsClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[2]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -929,7 +1167,7 @@ namespace WinFormsClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[3]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

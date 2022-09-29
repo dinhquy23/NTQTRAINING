@@ -4,13 +4,15 @@ option csharp_namespace = "WinFormsClient";
 import "google/protobuf/timestamp.proto";
 
 service ProductsServices{
-	rpc Create(Product) returns(Product);
-	rpc Delete(ProductId) returns(ProductEmpty);
+	rpc Create(Product) returns(ProductResponseResult);
+	rpc Delete(ProductId) returns(ProductResponseResult);
 	rpc GetAll(ProductEmpty) returns(ListProduct);
-	rpc Update(Product) returns(Product);
+	rpc Update(Product) returns(ProductResponseResult);
 }
 
 message ProductEmpty {}
+
+
 
 message Product
 {
@@ -22,6 +24,7 @@ message Product
 	google.protobuf.Timestamp CreatedDate = 6;
 	google.protobuf.Timestamp UpdatedDate = 7;
 }
+
 message ProductResponseResult{
 	Product item=1;
 	bool Result=2;

@@ -68,14 +68,56 @@ namespace NTQTRAINING_PRJ.Services
             }
         }
 
-        //public override Task<ProductEmpty> Delete(ProductId request, ServerCallContext context)
-        //{
-        //    return null;
-        //}
+        public override Task<Protos.ProductResponseResult> Delete(ProductId request, ServerCallContext context)
+        {
+            var product = NtqTrainingContext.Products.FirstOrDefault(c => c.Id == request.Id);
+            if (product == null)
+            {
+                return Task.FromResult(new ProductResponseResult
+                {
+                    Item = new Protos.Product(),
+                    Result = false
+                });
+            }
+            else
+            {
+                NtqTrainingContext.Products.Remove(product);
+                NtqTrainingContext.SaveChanges();
+                return Task.FromResult(new ProductResponseResult
+                {
+                    Item = new Protos.Product(),
+                    Result = true
+                });
+            }
+        }
 
-        //public override Task<Protos.Product> Update(Protos.Product request, ServerCallContext context)
-        //{
-        //    return null;
-        //}
+        public override Task<Protos.ProductResponseResult> Update(Protos.Product request, ServerCallContext context)
+        {
+            var product = NtqTrainingContext.Products.Find(request.Id);
+            if (product == null)
+            {
+                return Task.FromResult(new Protos.ProductResponseResult
+                {
+                    Item = null,
+                    Result = false
+                });
+            }
+            else
+            {
+                product.Name = request.Name;
+                product.TagName = request.TagName;
+                product.Active = request.Active;
+                product.CategoryId = request.CategoryId;
+                product.CreatedDate = request.CreatedDate.ToDateTime();
+                product.UpdatedDate = request.UpdatedDate.ToDateTime();
+                
+                NtqTrainingContext.SaveChanges();
+                return Task.FromResult(new Protos.ProductResponseResult
+                {
+                    Item = request,
+                    Result = true
+                });
+            }
+        }
     }
 }

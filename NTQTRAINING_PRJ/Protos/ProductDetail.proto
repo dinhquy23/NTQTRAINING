@@ -4,10 +4,10 @@ option csharp_namespace = "NTQTRAINING_PRJ.Protos";
 import "google/protobuf/timestamp.proto";
 
 service ProductDetailsServices{
-	rpc Create(ProductDetail) returns(ProductDetail);
-	rpc Delete(ProductDetailId) returns(ProductDetailEmpty);
+	rpc Create(ProductDetail) returns(ProductDetailResponseResult);
+	rpc Delete(ProductDetailId) returns(ProductDetailResponseResult);
 	rpc GetAll(ProductDetailEmpty) returns(ListProductDetail);
-	rpc Update(ProductDetail) returns(ProductDetail);
+	rpc Update(ProductDetail) returns(ProductDetailResponseResult);
 }
 
 message ProductDetailEmpty {}
@@ -25,10 +25,15 @@ message ProductDetail
     google.protobuf.Timestamp UpdatedDate=9;
 }
 
+message ProductDetailResponseResult{
+	ProductDetail item=1;
+	bool result=2;
+}
+
 message ProductDetailId{
 	int32 Id=1;
 }
 
 message ListProductDetail{
-	ProductDetail items=1;
+	repeated ProductDetail items=1;
 }
