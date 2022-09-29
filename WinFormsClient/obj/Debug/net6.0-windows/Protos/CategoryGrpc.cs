@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace NTQTRAINING_PRJ.Protos {
+namespace WinFormsClient {
   public static partial class CategoriesSevices
   {
     static readonly string __ServiceName = "CategoriesSevices";
@@ -46,18 +46,18 @@ namespace NTQTRAINING_PRJ.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.Category> __Marshaller_Category = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.Category.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.Category> __Marshaller_Category = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.Category.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ResponseSesult> __Marshaller_ResponseSesult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ResponseSesult.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ResponseSesult> __Marshaller_ResponseSesult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ResponseSesult.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.CategoryId> __Marshaller_CategoryId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.CategoryId.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.CategoryId> __Marshaller_CategoryId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.CategoryId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.CategoryEmpty> __Marshaller_CategoryEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.CategoryEmpty.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.CategoryEmpty> __Marshaller_CategoryEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.CategoryEmpty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ListCategory> __Marshaller_ListCategory = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ListCategory.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ListCategory> __Marshaller_ListCategory = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ListCategory.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.Category, global::NTQTRAINING_PRJ.Protos.ResponseSesult> __Method_Create = new grpc::Method<global::NTQTRAINING_PRJ.Protos.Category, global::NTQTRAINING_PRJ.Protos.ResponseSesult>(
+    static readonly grpc::Method<global::WinFormsClient.Category, global::WinFormsClient.ResponseSesult> __Method_Create = new grpc::Method<global::WinFormsClient.Category, global::WinFormsClient.ResponseSesult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
@@ -65,7 +65,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ResponseSesult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryId, global::NTQTRAINING_PRJ.Protos.CategoryEmpty> __Method_Delete = new grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryId, global::NTQTRAINING_PRJ.Protos.CategoryEmpty>(
+    static readonly grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.CategoryEmpty> __Method_Delete = new grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.CategoryEmpty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
@@ -73,7 +73,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_CategoryEmpty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryEmpty, global::NTQTRAINING_PRJ.Protos.ListCategory> __Method_GetAll = new grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryEmpty, global::NTQTRAINING_PRJ.Protos.ListCategory>(
+    static readonly grpc::Method<global::WinFormsClient.CategoryEmpty, global::WinFormsClient.ListCategory> __Method_GetAll = new grpc::Method<global::WinFormsClient.CategoryEmpty, global::WinFormsClient.ListCategory>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAll",
@@ -81,7 +81,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ListCategory);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryId, global::NTQTRAINING_PRJ.Protos.ResponseSesult> __Method_GetCategoryById = new grpc::Method<global::NTQTRAINING_PRJ.Protos.CategoryId, global::NTQTRAINING_PRJ.Protos.ResponseSesult>(
+    static readonly grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.ResponseSesult> __Method_GetCategoryById = new grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.ResponseSesult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCategoryById",
@@ -89,7 +89,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ResponseSesult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.Category, global::NTQTRAINING_PRJ.Protos.ResponseSesult> __Method_Update = new grpc::Method<global::NTQTRAINING_PRJ.Protos.Category, global::NTQTRAINING_PRJ.Protos.ResponseSesult>(
+    static readonly grpc::Method<global::WinFormsClient.Category, global::WinFormsClient.ResponseSesult> __Method_Update = new grpc::Method<global::WinFormsClient.Category, global::WinFormsClient.ResponseSesult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
@@ -99,7 +99,7 @@ namespace NTQTRAINING_PRJ.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.Services[0]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for CategoriesSevices</summary>
@@ -130,102 +130,102 @@ namespace NTQTRAINING_PRJ.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult Create(global::NTQTRAINING_PRJ.Protos.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ResponseSesult Create(global::WinFormsClient.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult Create(global::NTQTRAINING_PRJ.Protos.Category request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ResponseSesult Create(global::WinFormsClient.Category request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> CreateAsync(global::NTQTRAINING_PRJ.Protos.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> CreateAsync(global::WinFormsClient.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> CreateAsync(global::NTQTRAINING_PRJ.Protos.Category request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> CreateAsync(global::WinFormsClient.Category request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.CategoryEmpty Delete(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.CategoryEmpty Delete(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.CategoryEmpty Delete(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.CategoryEmpty Delete(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.CategoryEmpty> DeleteAsync(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.CategoryEmpty> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.CategoryEmpty> DeleteAsync(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.CategoryEmpty> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ListCategory GetAll(global::NTQTRAINING_PRJ.Protos.CategoryEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ListCategory GetAll(global::WinFormsClient.CategoryEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ListCategory GetAll(global::NTQTRAINING_PRJ.Protos.CategoryEmpty request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ListCategory GetAll(global::WinFormsClient.CategoryEmpty request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ListCategory> GetAllAsync(global::NTQTRAINING_PRJ.Protos.CategoryEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ListCategory> GetAllAsync(global::WinFormsClient.CategoryEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ListCategory> GetAllAsync(global::NTQTRAINING_PRJ.Protos.CategoryEmpty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ListCategory> GetAllAsync(global::WinFormsClient.CategoryEmpty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult GetCategoryById(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ResponseSesult GetCategoryById(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetCategoryById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult GetCategoryById(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ResponseSesult GetCategoryById(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetCategoryById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> GetCategoryByIdAsync(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> GetCategoryByIdAsync(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetCategoryByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> GetCategoryByIdAsync(global::NTQTRAINING_PRJ.Protos.CategoryId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> GetCategoryByIdAsync(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCategoryById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult Update(global::NTQTRAINING_PRJ.Protos.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ResponseSesult Update(global::WinFormsClient.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ResponseSesult Update(global::NTQTRAINING_PRJ.Protos.Category request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ResponseSesult Update(global::WinFormsClient.Category request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> UpdateAsync(global::NTQTRAINING_PRJ.Protos.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> UpdateAsync(global::WinFormsClient.Category request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ResponseSesult> UpdateAsync(global::NTQTRAINING_PRJ.Protos.Category request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> UpdateAsync(global::WinFormsClient.Category request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

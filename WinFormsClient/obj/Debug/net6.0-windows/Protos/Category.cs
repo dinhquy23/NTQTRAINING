@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace NTQTRAINING_PRJ.Protos {
+namespace WinFormsClient {
 
   /// <summary>Holder for reflection information generated from Protos/Category.proto</summary>
   public static partial class CategoryReflection {
@@ -37,16 +37,15 @@ namespace NTQTRAINING_PRJ.Protos {
             "eUlkGg4uQ2F0ZWdvcnlFbXB0eRInCgZHZXRBbGwSDi5DYXRlZ29yeUVtcHR5",
             "Gg0uTGlzdENhdGVnb3J5Ei8KD0dldENhdGVnb3J5QnlJZBILLkNhdGVnb3J5",
             "SWQaDy5SZXNwb25zZVNlc3VsdBIkCgZVcGRhdGUSCS5DYXRlZ29yeRoPLlJl",
-            "c3BvbnNlU2VzdWx0QhmqAhZOVFFUUkFJTklOR19QUkouUHJvdG9zYgZwcm90",
-            "bzM="));
+            "c3BvbnNlU2VzdWx0QhGqAg5XaW5Gb3Jtc0NsaWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.CategoryEmpty), global::NTQTRAINING_PRJ.Protos.CategoryEmpty.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ResponseSesult), global::NTQTRAINING_PRJ.Protos.ResponseSesult.Parser, new[]{ "Item", "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.Category), global::NTQTRAINING_PRJ.Protos.Category.Parser, new[]{ "Id", "Name", "TagName", "Active", "CreatedDate", "UpdatedDate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.CategoryId), global::NTQTRAINING_PRJ.Protos.CategoryId.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ListCategory), global::NTQTRAINING_PRJ.Protos.ListCategory.Parser, new[]{ "Items" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.CategoryEmpty), global::WinFormsClient.CategoryEmpty.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ResponseSesult), global::WinFormsClient.ResponseSesult.Parser, new[]{ "Item", "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.Category), global::WinFormsClient.Category.Parser, new[]{ "Id", "Name", "TagName", "Active", "CreatedDate", "UpdatedDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.CategoryId), global::WinFormsClient.CategoryId.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ListCategory), global::WinFormsClient.ListCategory.Parser, new[]{ "Items" }, null, null, null, null)
           }));
     }
     #endregion
@@ -67,7 +66,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[0]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -219,7 +218,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[1]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -252,10 +251,10 @@ namespace NTQTRAINING_PRJ.Protos {
 
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 1;
-    private global::NTQTRAINING_PRJ.Protos.Category item_;
+    private global::WinFormsClient.Category item_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::NTQTRAINING_PRJ.Protos.Category Item {
+    public global::WinFormsClient.Category Item {
       get { return item_; }
       set {
         item_ = value;
@@ -374,7 +373,7 @@ namespace NTQTRAINING_PRJ.Protos {
       }
       if (other.item_ != null) {
         if (item_ == null) {
-          Item = new global::NTQTRAINING_PRJ.Protos.Category();
+          Item = new global::WinFormsClient.Category();
         }
         Item.MergeFrom(other.Item);
       }
@@ -398,7 +397,7 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           case 10: {
             if (item_ == null) {
-              Item = new global::NTQTRAINING_PRJ.Protos.Category();
+              Item = new global::WinFormsClient.Category();
             }
             input.ReadMessage(Item);
             break;
@@ -424,7 +423,7 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           case 10: {
             if (item_ == null) {
-              Item = new global::NTQTRAINING_PRJ.Protos.Category();
+              Item = new global::WinFormsClient.Category();
             }
             input.ReadMessage(Item);
             break;
@@ -454,7 +453,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[2]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -846,7 +845,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[3]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1035,7 +1034,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[4]; }
+      get { return global::WinFormsClient.CategoryReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1067,12 +1066,12 @@ namespace NTQTRAINING_PRJ.Protos {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::NTQTRAINING_PRJ.Protos.Category> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(10, global::NTQTRAINING_PRJ.Protos.Category.Parser);
-    private readonly pbc::RepeatedField<global::NTQTRAINING_PRJ.Protos.Category> items_ = new pbc::RepeatedField<global::NTQTRAINING_PRJ.Protos.Category>();
+    private static readonly pb::FieldCodec<global::WinFormsClient.Category> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::WinFormsClient.Category.Parser);
+    private readonly pbc::RepeatedField<global::WinFormsClient.Category> items_ = new pbc::RepeatedField<global::WinFormsClient.Category>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::NTQTRAINING_PRJ.Protos.Category> Items {
+    public pbc::RepeatedField<global::WinFormsClient.Category> Items {
       get { return items_; }
     }
 

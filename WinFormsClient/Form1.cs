@@ -1,5 +1,5 @@
 using Grpc.Net.Client;
-using NTQTRAINING_PRJ.Protos;
+//using NTQTRAINING_PRJ.Protos;
 using System.Data;
 using System.Globalization;
 using System.Reflection;

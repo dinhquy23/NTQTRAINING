@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace NTQTRAINING_PRJ.Protos {
+namespace WinFormsClient {
   public static partial class ProductDetailsServices
   {
     static readonly string __ServiceName = "ProductDetailsServices";
@@ -46,16 +46,16 @@ namespace NTQTRAINING_PRJ.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetail> __Marshaller_ProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetail.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ProductDetail> __Marshaller_ProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductDetail.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetailId> __Marshaller_ProductDetailId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetailId.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ProductDetailId> __Marshaller_ProductDetailId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductDetailId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> __Marshaller_ProductDetailEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ProductDetailEmpty> __Marshaller_ProductDetailEmpty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ProductDetailEmpty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::NTQTRAINING_PRJ.Protos.ListProductDetail> __Marshaller_ListProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::NTQTRAINING_PRJ.Protos.ListProductDetail.Parser));
+    static readonly grpc::Marshaller<global::WinFormsClient.ListProductDetail> __Marshaller_ListProductDetail = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WinFormsClient.ListProductDetail.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail> __Method_Create = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(
+    static readonly grpc::Method<global::WinFormsClient.ProductDetail, global::WinFormsClient.ProductDetail> __Method_Create = new grpc::Method<global::WinFormsClient.ProductDetail, global::WinFormsClient.ProductDetail>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
@@ -63,7 +63,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ProductDetail);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> __Method_Delete = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailId, global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty>(
+    static readonly grpc::Method<global::WinFormsClient.ProductDetailId, global::WinFormsClient.ProductDetailEmpty> __Method_Delete = new grpc::Method<global::WinFormsClient.ProductDetailId, global::WinFormsClient.ProductDetailEmpty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
@@ -71,7 +71,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ProductDetailEmpty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty, global::NTQTRAINING_PRJ.Protos.ListProductDetail> __Method_GetAll = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty, global::NTQTRAINING_PRJ.Protos.ListProductDetail>(
+    static readonly grpc::Method<global::WinFormsClient.ProductDetailEmpty, global::WinFormsClient.ListProductDetail> __Method_GetAll = new grpc::Method<global::WinFormsClient.ProductDetailEmpty, global::WinFormsClient.ListProductDetail>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAll",
@@ -79,7 +79,7 @@ namespace NTQTRAINING_PRJ.Protos {
         __Marshaller_ListProductDetail);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail> __Method_Update = new grpc::Method<global::NTQTRAINING_PRJ.Protos.ProductDetail, global::NTQTRAINING_PRJ.Protos.ProductDetail>(
+    static readonly grpc::Method<global::WinFormsClient.ProductDetail, global::WinFormsClient.ProductDetail> __Method_Update = new grpc::Method<global::WinFormsClient.ProductDetail, global::WinFormsClient.ProductDetail>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
@@ -89,7 +89,7 @@ namespace NTQTRAINING_PRJ.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::NTQTRAINING_PRJ.Protos.ProductDetailReflection.Descriptor.Services[0]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for ProductDetailsServices</summary>
@@ -120,82 +120,82 @@ namespace NTQTRAINING_PRJ.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetail Create(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductDetail Create(global::WinFormsClient.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetail Create(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductDetail Create(global::WinFormsClient.ProductDetail request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetail> CreateAsync(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetail> CreateAsync(global::WinFormsClient.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetail> CreateAsync(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetail> CreateAsync(global::WinFormsClient.ProductDetail request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty Delete(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductDetailEmpty Delete(global::WinFormsClient.ProductDetailId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty Delete(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductDetailEmpty Delete(global::WinFormsClient.ProductDetailId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> DeleteAsync(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetailEmpty> DeleteAsync(global::WinFormsClient.ProductDetailId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty> DeleteAsync(global::NTQTRAINING_PRJ.Protos.ProductDetailId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetailEmpty> DeleteAsync(global::WinFormsClient.ProductDetailId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ListProductDetail GetAll(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ListProductDetail GetAll(global::WinFormsClient.ProductDetailEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ListProductDetail GetAll(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ListProductDetail GetAll(global::WinFormsClient.ProductDetailEmpty request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ListProductDetail> GetAllAsync(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ListProductDetail> GetAllAsync(global::WinFormsClient.ProductDetailEmpty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ListProductDetail> GetAllAsync(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ListProductDetail> GetAllAsync(global::WinFormsClient.ProductDetailEmpty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetail Update(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ProductDetail Update(global::WinFormsClient.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::NTQTRAINING_PRJ.Protos.ProductDetail Update(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ProductDetail Update(global::WinFormsClient.ProductDetail request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetail> UpdateAsync(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetail> UpdateAsync(global::WinFormsClient.ProductDetail request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::NTQTRAINING_PRJ.Protos.ProductDetail> UpdateAsync(global::NTQTRAINING_PRJ.Protos.ProductDetail request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ProductDetail> UpdateAsync(global::WinFormsClient.ProductDetail request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

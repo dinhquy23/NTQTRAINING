@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "NTQTRAINING_PRJ.Protos";
+option csharp_namespace = "WinFormsClient";
 import "google/protobuf/timestamp.proto";
 
 service ProductDetailsServices{
@@ -30,5 +30,5 @@ message ProductDetailId{
 }
 
 message ListProductDetail{
-	ProductDetail items=1;
+	repeated ProductDetail items=1;
 }

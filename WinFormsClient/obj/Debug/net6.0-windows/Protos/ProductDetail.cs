@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace NTQTRAINING_PRJ.Protos {
+namespace WinFormsClient {
 
   /// <summary>Holder for reflection information generated from Protos/ProductDetail.proto</summary>
   public static partial class ProductDetailReflection {
@@ -33,20 +33,20 @@ namespace NTQTRAINING_PRJ.Protos {
             "ZBgHIAEoBRIvCgtDcmVhdGVkRGF0ZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1",
             "Zi5UaW1lc3RhbXASLwoLVXBkYXRlZERhdGUYCSABKAsyGi5nb29nbGUucHJv",
             "dG9idWYuVGltZXN0YW1wIh0KD1Byb2R1Y3REZXRhaWxJZBIKCgJJZBgBIAEo",
-            "BSIyChFMaXN0UHJvZHVjdERldGFpbBIdCgVpdGVtcxgBIAEoCzIOLlByb2R1",
+            "BSIyChFMaXN0UHJvZHVjdERldGFpbBIdCgVpdGVtcxgBIAMoCzIOLlByb2R1",
             "Y3REZXRhaWwy0AEKFlByb2R1Y3REZXRhaWxzU2VydmljZXMSKAoGQ3JlYXRl",
             "Eg4uUHJvZHVjdERldGFpbBoOLlByb2R1Y3REZXRhaWwSLwoGRGVsZXRlEhAu",
             "UHJvZHVjdERldGFpbElkGhMuUHJvZHVjdERldGFpbEVtcHR5EjEKBkdldEFs",
             "bBITLlByb2R1Y3REZXRhaWxFbXB0eRoSLkxpc3RQcm9kdWN0RGV0YWlsEigK",
-            "BlVwZGF0ZRIOLlByb2R1Y3REZXRhaWwaDi5Qcm9kdWN0RGV0YWlsQhmqAhZO",
-            "VFFUUkFJTklOR19QUkouUHJvdG9zYgZwcm90bzM="));
+            "BlVwZGF0ZRIOLlByb2R1Y3REZXRhaWwaDi5Qcm9kdWN0RGV0YWlsQhGqAg5X",
+            "aW5Gb3Jtc0NsaWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty), global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ProductDetail), global::NTQTRAINING_PRJ.Protos.ProductDetail.Parser, new[]{ "Id", "Price", "Color", "StartingDate", "ClosingDate", "MadeBy", "ProductId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ProductDetailId), global::NTQTRAINING_PRJ.Protos.ProductDetailId.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ListProductDetail), global::NTQTRAINING_PRJ.Protos.ListProductDetail.Parser, new[]{ "Items" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetailEmpty), global::WinFormsClient.ProductDetailEmpty.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetail), global::WinFormsClient.ProductDetail.Parser, new[]{ "Id", "Price", "Color", "StartingDate", "ClosingDate", "MadeBy", "ProductId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ProductDetailId), global::WinFormsClient.ProductDetailId.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::WinFormsClient.ListProductDetail), global::WinFormsClient.ListProductDetail.Parser, new[]{ "Items" }, null, null, null, null)
           }));
     }
     #endregion
@@ -67,7 +67,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.ProductDetailReflection.Descriptor.MessageTypes[0]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -219,7 +219,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.ProductDetailReflection.Descriptor.MessageTypes[1]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -740,7 +740,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.ProductDetailReflection.Descriptor.MessageTypes[2]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -929,7 +929,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.ProductDetailReflection.Descriptor.MessageTypes[3]; }
+      get { return global::WinFormsClient.ProductDetailReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -949,7 +949,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListProductDetail(ListProductDetail other) : this() {
-      items_ = other.items_ != null ? other.items_.Clone() : null;
+      items_ = other.items_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -961,14 +961,13 @@ namespace NTQTRAINING_PRJ.Protos {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 1;
-    private global::NTQTRAINING_PRJ.Protos.ProductDetail items_;
+    private static readonly pb::FieldCodec<global::WinFormsClient.ProductDetail> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::WinFormsClient.ProductDetail.Parser);
+    private readonly pbc::RepeatedField<global::WinFormsClient.ProductDetail> items_ = new pbc::RepeatedField<global::WinFormsClient.ProductDetail>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::NTQTRAINING_PRJ.Protos.ProductDetail Items {
+    public pbc::RepeatedField<global::WinFormsClient.ProductDetail> Items {
       get { return items_; }
-      set {
-        items_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -986,7 +985,7 @@ namespace NTQTRAINING_PRJ.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Items, other.Items)) return false;
+      if(!items_.Equals(other.items_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -994,7 +993,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (items_ != null) hash ^= Items.GetHashCode();
+      hash ^= items_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1013,10 +1012,7 @@ namespace NTQTRAINING_PRJ.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (items_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Items);
-      }
+      items_.WriteTo(output, _repeated_items_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1027,10 +1023,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (items_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Items);
-      }
+      items_.WriteTo(ref output, _repeated_items_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1041,9 +1034,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (items_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Items);
-      }
+      size += items_.CalculateSize(_repeated_items_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1056,12 +1047,7 @@ namespace NTQTRAINING_PRJ.Protos {
       if (other == null) {
         return;
       }
-      if (other.items_ != null) {
-        if (items_ == null) {
-          Items = new global::NTQTRAINING_PRJ.Protos.ProductDetail();
-        }
-        Items.MergeFrom(other.Items);
-      }
+      items_.Add(other.items_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1078,10 +1064,7 @@ namespace NTQTRAINING_PRJ.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (items_ == null) {
-              Items = new global::NTQTRAINING_PRJ.Protos.ProductDetail();
-            }
-            input.ReadMessage(Items);
+            items_.AddEntriesFrom(input, _repeated_items_codec);
             break;
           }
         }
@@ -1100,10 +1083,7 @@ namespace NTQTRAINING_PRJ.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (items_ == null) {
-              Items = new global::NTQTRAINING_PRJ.Protos.ProductDetail();
-            }
-            input.ReadMessage(Items);
+            items_.AddEntriesFrom(ref input, _repeated_items_codec);
             break;
           }
         }
