@@ -12,6 +12,11 @@ service ProductsServices{
 
 message ProductEmpty {}
 
+message ProductResponseResult{
+	Product item=1;
+	bool Result=2;
+}
+
 message Product
 {
 	int32 Id=1;
@@ -28,5 +33,5 @@ message ProductId{
 }
 
 message ListProduct{
-	Product items=1;
+	repeated Product items=1;
 }

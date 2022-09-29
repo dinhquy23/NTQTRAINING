@@ -25,22 +25,25 @@ namespace NTQTRAINING_PRJ.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVQcm90b3MvQ2F0ZWdvcnkucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1l",
-            "c3RhbXAucHJvdG8iDwoNQ2F0ZWdvcnlFbXB0eSKnAQoIQ2F0ZWdvcnkSCgoC",
-            "SWQYASABKAUSDAoETmFtZRgCIAEoCRIPCgdUYWdOYW1lGAMgASgJEg4KBkFj",
-            "dGl2ZRgEIAEoCBIvCgtDcmVhdGVkRGF0ZRgFIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASLwoLVXBkYXRlZERhdGUYBiABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wIhgKCkNhdGVnb3J5SWQSCgoCSWQYASABKAUi",
-            "KAoMTGlzdENhdGVnb3J5EhgKBWl0ZW1zGAEgAygLMgkuQ2F0ZWdvcnkyzgEK",
-            "EUNhdGVnb3JpZXNTZXZpY2VzEh4KBkNyZWF0ZRIJLkNhdGVnb3J5GgkuQ2F0",
-            "ZWdvcnkSJQoGRGVsZXRlEgsuQ2F0ZWdvcnlJZBoOLkNhdGVnb3J5RW1wdHkS",
-            "JwoGR2V0QWxsEg4uQ2F0ZWdvcnlFbXB0eRoNLkxpc3RDYXRlZ29yeRIpCg9H",
-            "ZXRDYXRlZ29yeUJ5SWQSCy5DYXRlZ29yeUlkGgkuQ2F0ZWdvcnkSHgoGVXBk",
-            "YXRlEgkuQ2F0ZWdvcnkaCS5DYXRlZ29yeUIZqgIWTlRRVFJBSU5JTkdfUFJK",
-            "LlByb3Rvc2IGcHJvdG8z"));
+            "c3RhbXAucHJvdG8iDwoNQ2F0ZWdvcnlFbXB0eSI5Cg5SZXNwb25zZVNlc3Vs",
+            "dBIXCgRpdGVtGAEgASgLMgkuQ2F0ZWdvcnkSDgoGUmVzdWx0GAIgASgIIqcB",
+            "CghDYXRlZ29yeRIKCgJJZBgBIAEoBRIMCgROYW1lGAIgASgJEg8KB1RhZ05h",
+            "bWUYAyABKAkSDgoGQWN0aXZlGAQgASgIEi8KC0NyZWF0ZWREYXRlGAUgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIvCgtVcGRhdGVkRGF0ZRgG",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiGAoKQ2F0ZWdvcnlJ",
+            "ZBIKCgJJZBgBIAEoBSIoCgxMaXN0Q2F0ZWdvcnkSGAoFaXRlbXMYASADKAsy",
+            "CS5DYXRlZ29yeTLhAQoRQ2F0ZWdvcmllc1NldmljZXMSJAoGQ3JlYXRlEgku",
+            "Q2F0ZWdvcnkaDy5SZXNwb25zZVNlc3VsdBImCgZEZWxldGUSCy5DYXRlZ29y",
+            "eUlkGg8uUmVzcG9uc2VTZXN1bHQSJwoGR2V0QWxsEg4uQ2F0ZWdvcnlFbXB0",
+            "eRoNLkxpc3RDYXRlZ29yeRIvCg9HZXRDYXRlZ29yeUJ5SWQSCy5DYXRlZ29y",
+            "eUlkGg8uUmVzcG9uc2VTZXN1bHQSJAoGVXBkYXRlEgkuQ2F0ZWdvcnkaDy5S",
+            "ZXNwb25zZVNlc3VsdEIZqgIWTlRRVFJBSU5JTkdfUFJKLlByb3Rvc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.CategoryEmpty), global::NTQTRAINING_PRJ.Protos.CategoryEmpty.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ResponseSesult), global::NTQTRAINING_PRJ.Protos.ResponseSesult.Parser, new[]{ "Item", "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.Category), global::NTQTRAINING_PRJ.Protos.Category.Parser, new[]{ "Id", "Name", "TagName", "Active", "CreatedDate", "UpdatedDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.CategoryId), global::NTQTRAINING_PRJ.Protos.CategoryId.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ListCategory), global::NTQTRAINING_PRJ.Protos.ListCategory.Parser, new[]{ "Items" }, null, null, null, null)
@@ -202,6 +205,241 @@ namespace NTQTRAINING_PRJ.Protos {
 
   }
 
+  public sealed partial class ResponseSesult : pb::IMessage<ResponseSesult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ResponseSesult> _parser = new pb::MessageParser<ResponseSesult>(() => new ResponseSesult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ResponseSesult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseSesult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseSesult(ResponseSesult other) : this() {
+      item_ = other.item_ != null ? other.item_.Clone() : null;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseSesult Clone() {
+      return new ResponseSesult(this);
+    }
+
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 1;
+    private global::NTQTRAINING_PRJ.Protos.Category item_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::NTQTRAINING_PRJ.Protos.Category Item {
+      get { return item_; }
+      set {
+        item_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private bool result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ResponseSesult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ResponseSesult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Item, other.Item)) return false;
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (item_ != null) hash ^= Item.GetHashCode();
+      if (Result != false) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
+      if (Result != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
+      if (Result != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (item_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
+      }
+      if (Result != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ResponseSesult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.item_ != null) {
+        if (item_ == null) {
+          Item = new global::NTQTRAINING_PRJ.Protos.Category();
+        }
+        Item.MergeFrom(other.Item);
+      }
+      if (other.Result != false) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (item_ == null) {
+              Item = new global::NTQTRAINING_PRJ.Protos.Category();
+            }
+            input.ReadMessage(Item);
+            break;
+          }
+          case 16: {
+            Result = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (item_ == null) {
+              Item = new global::NTQTRAINING_PRJ.Protos.Category();
+            }
+            input.ReadMessage(Item);
+            break;
+          }
+          case 16: {
+            Result = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class Category : pb::IMessage<Category>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -216,7 +454,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[1]; }
+      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -608,7 +846,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[2]; }
+      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -797,7 +1035,7 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[3]; }
+      get { return global::NTQTRAINING_PRJ.Protos.CategoryReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

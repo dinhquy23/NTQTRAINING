@@ -5,14 +5,19 @@ option csharp_namespace = "NTQTRAINING_PRJ.Protos";
 
 
 service CategoriesSevices {
-	rpc Create(Category) returns(Category);
+	rpc Create(Category) returns(ResponseSesult);
 	rpc Delete(CategoryId) returns(CategoryEmpty);
 	rpc GetAll(CategoryEmpty) returns(ListCategory);
-	rpc GetCategoryById(CategoryId) returns(Category);
-	rpc Update(Category) returns(Category);
+	rpc GetCategoryById(CategoryId) returns(ResponseSesult);
+	rpc Update(Category) returns(ResponseSesult);
 }
 
 message CategoryEmpty {}
+
+message ResponseSesult{
+	Category item=1;
+	bool Result=2;
+}
 
 message Category
 {
