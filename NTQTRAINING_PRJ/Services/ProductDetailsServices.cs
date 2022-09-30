@@ -32,8 +32,6 @@ namespace NTQTRAINING_PRJ.Services
                              UpdatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(prod.UpdatedDate, DateTimeKind.Utc)),
                          };
             listProductDetail.Items.AddRange(result.ToArray());
-
-
             return Task.FromResult(listProductDetail);
         }
 

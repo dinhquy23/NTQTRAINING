@@ -136,7 +136,6 @@ namespace NTQTRAINING_PRJ.Services
                 category.Active = request.Active;
                 category.CreatedDate = request.CreatedDate.ToDateTime();
                 category.UpdatedDate = request.UpdatedDate.ToDateTime();
-                //NtqTrainingContext.Categories.Update(category);
                 NtqTrainingContext.SaveChanges();
                 return Task.FromResult(new Protos.ResponseSesult
                 {
