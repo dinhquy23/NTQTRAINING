@@ -128,7 +128,6 @@ namespace WinFormsClient
                 
                 frmProduct_Load(sender, e);
             }
-            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
