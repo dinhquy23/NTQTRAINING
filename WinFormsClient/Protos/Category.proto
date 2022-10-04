@@ -6,7 +6,7 @@ option csharp_namespace = "WinFormsClient";
 
 service CategoriesSevices {
 	rpc Create(Category) returns(ResponseSesult);
-	rpc Delete(CategoryId) returns(CategoryEmpty);
+	rpc Delete(CategoryId) returns(ResponseSesult);
 	rpc GetAll(CategoryEmpty) returns(ListCategory);
 	rpc GetCategoryById(CategoryId) returns(ResponseSesult);
 	rpc Update(Category) returns(ResponseSesult);

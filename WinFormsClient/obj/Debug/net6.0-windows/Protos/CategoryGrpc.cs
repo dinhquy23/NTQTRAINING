@@ -65,12 +65,12 @@ namespace WinFormsClient {
         __Marshaller_ResponseSesult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.CategoryEmpty> __Method_Delete = new grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.CategoryEmpty>(
+    static readonly grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.ResponseSesult> __Method_Delete = new grpc::Method<global::WinFormsClient.CategoryId, global::WinFormsClient.ResponseSesult>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
         __Marshaller_CategoryId,
-        __Marshaller_CategoryEmpty);
+        __Marshaller_ResponseSesult);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::WinFormsClient.CategoryEmpty, global::WinFormsClient.ListCategory> __Method_GetAll = new grpc::Method<global::WinFormsClient.CategoryEmpty, global::WinFormsClient.ListCategory>(
@@ -150,22 +150,22 @@ namespace WinFormsClient {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.CategoryEmpty Delete(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::WinFormsClient.ResponseSesult Delete(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::WinFormsClient.CategoryEmpty Delete(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
+      public virtual global::WinFormsClient.ResponseSesult Delete(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.CategoryEmpty> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.CategoryEmpty> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::WinFormsClient.ResponseSesult> DeleteAsync(global::WinFormsClient.CategoryId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }

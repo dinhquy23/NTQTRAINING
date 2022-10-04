@@ -105,9 +105,27 @@ namespace WinFormsClient
         {
             CategoryId categoryID = new CategoryId();
             categoryID.Id = int.Parse(txtId.Text);
-            client.Delete(categoryID);
-            Form1_Load(sender, e);
-
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Input value not correct", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult tl = MessageBox.Show($"Do you want to delete {txtId.Text} ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (tl == DialogResult.Yes)
+                {
+                    ResponseSesult responseSesult = client.Delete(categoryID);
+                    if(responseSesult.Result==true)
+                    {
+                        MessageBox.Show("Delete Successfull", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cannot Delete", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                Form1_Load(sender, e);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

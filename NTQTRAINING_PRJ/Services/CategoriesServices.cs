@@ -1,5 +1,6 @@
 ﻿using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using NTQTRAINING_PRJ.Models;
 using NTQTRAINING_PRJ.Protos;
 using System.ComponentModel;
@@ -7,7 +8,7 @@ using static NTQTRAINING_PRJ.Protos.CategoriesSevices;
 
 namespace NTQTRAINING_PRJ.Services
 {
-    public class CategoriesServices: CategoriesSevicesBase
+    public class CategoriesServices : CategoriesSevicesBase
     {
         public NTQTRAININGContext NtqTrainingContext;
         public CategoriesServices(NTQTRAININGContext ntqtrainingcontext)
@@ -31,11 +32,11 @@ namespace NTQTRAINING_PRJ.Services
                 NtqTrainingContext.SaveChanges();
                 return Task.FromResult(new ResponseSesult
                 {
-                    Item=request,
-                    Result=true
+                    Item = request,
+                    Result = true
                 });
             }
-           catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return Task.FromResult(new ResponseSesult
@@ -49,25 +50,41 @@ namespace NTQTRAINING_PRJ.Services
 
         public override Task<Protos.ResponseSesult> Delete(Protos.CategoryId request, ServerCallContext context)
         {
-
-            var category = NtqTrainingContext.Categories.FirstOrDefault(c => c.Id == request.Id);
-            if (category == null)
+            using (var transaction = NtqTrainingContext.Database.BeginTransaction())
             {
-                return Task.FromResult(new ResponseSesult
+                try
                 {
-                    Item=new Protos.Category(),
-                    Result=false
-                });
-            }
-            else
-            {
-                NtqTrainingContext.Categories.Remove(category);
-                NtqTrainingContext.SaveChanges();
-                return Task.FromResult(new ResponseSesult
+                    var category = NtqTrainingContext.Categories.FirstOrDefault(c => c.Id == request.Id);
+                    if (category == null)
+                    {
+                        return Task.FromResult(new ResponseSesult
+                        {
+                            Item = new Protos.Category(),
+                            Result = false
+                        });
+                    }
+                    else
+                    {
+                        NtqTrainingContext.Categories.Remove(category);
+                        NtqTrainingContext.SaveChanges();
+                        transaction.Commit();
+                        return Task.FromResult(new ResponseSesult
+                        {
+                            Item = new Protos.Category(),
+                            Result = true
+                        });
+                    }
+                }
+                catch
                 {
-                    Item = new Protos.Category(),
-                    Result = true
-                });
+                    transaction.Rollback();
+                    return Task.FromResult(new ResponseSesult
+                    {
+                        Item = new Protos.Category(),
+                        Result = false
+                    });
+                }
+                
             }
 
         }
@@ -81,8 +98,8 @@ namespace NTQTRAINING_PRJ.Services
                              Id = cte.Id,
                              Name = cte.Name,
                              TagName = cte.TagName,
-                             Active= cte.Active ?? true,
-                             CreatedDate= Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(cte.CreatedDate, DateTimeKind.Utc)),
+                             Active = cte.Active ?? true,
+                             CreatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(cte.CreatedDate, DateTimeKind.Utc)),
                              UpdatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(cte.UpdatedDate, DateTimeKind.Utc)),
                          };
             listCategory.Items.AddRange(result.ToArray());
@@ -92,7 +109,7 @@ namespace NTQTRAINING_PRJ.Services
         public override Task<Protos.ResponseSesult> GetCategoryById(CategoryId request, ServerCallContext context)
         {
             var category = NtqTrainingContext.Categories.Find(request.Id);
-            if(category == null)
+            if (category == null)
             {
                 return Task.FromResult(new Protos.ResponseSesult
                 {
@@ -104,6 +121,7 @@ namespace NTQTRAINING_PRJ.Services
             {
                 Protos.Category category1 = new Protos.Category
                 {
+                    Id = category.Id,
                     Name = category.Name,
                     TagName = category.TagName,
                     Active = category.Active ?? true,
@@ -112,16 +130,16 @@ namespace NTQTRAINING_PRJ.Services
                 };
                 return Task.FromResult(new Protos.ResponseSesult
                 {
-                    Item=category1,
-                    Result=true
+                    Item = category1,
+                    Result = true
                 });
             }
         }
 
         public override Task<Protos.ResponseSesult> Update(Protos.Category request, ServerCallContext context)
         {
-            var category=NtqTrainingContext.Categories.Find(request.Id);
-            if(category == null)
+            var category = NtqTrainingContext.Categories.Find(request.Id);
+            if (category == null)
             {
                 return Task.FromResult(new Protos.ResponseSesult
                 {

@@ -25,26 +25,28 @@ namespace NTQTRAINING_PRJ.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChpQcm90b3MvUHJvZHVjdERldGFpbC5wcm90bxofZ29vZ2xlL3Byb3RvYnVm",
-            "L3RpbWVzdGFtcC5wcm90byIUChJQcm9kdWN0RGV0YWlsRW1wdHkioQIKDVBy",
-            "b2R1Y3REZXRhaWwSCgoCSWQYASABKAUSDQoFUHJpY2UYAiABKAkSDQoFQ29s",
-            "b3IYAyABKAkSMAoMU3RhcnRpbmdEYXRlGAQgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBIvCgtDbG9zaW5nRGF0ZRgFIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXASDgoGTWFkZUJ5GAYgASgJEhEKCVByb2R1Y3RJ",
-            "ZBgHIAEoBRIvCgtDcmVhdGVkRGF0ZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASLwoLVXBkYXRlZERhdGUYCSABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wIksKG1Byb2R1Y3REZXRhaWxSZXNwb25zZVJlc3Vs",
-            "dBIcCgRpdGVtGAEgASgLMg4uUHJvZHVjdERldGFpbBIOCgZyZXN1bHQYAiAB",
-            "KAgiHQoPUHJvZHVjdERldGFpbElkEgoKAklkGAEgASgFIjIKEUxpc3RQcm9k",
-            "dWN0RGV0YWlsEh0KBWl0ZW1zGAEgAygLMg4uUHJvZHVjdERldGFpbDL1AQoW",
-            "UHJvZHVjdERldGFpbHNTZXJ2aWNlcxI2CgZDcmVhdGUSDi5Qcm9kdWN0RGV0",
-            "YWlsGhwuUHJvZHVjdERldGFpbFJlc3BvbnNlUmVzdWx0EjgKBkRlbGV0ZRIQ",
-            "LlByb2R1Y3REZXRhaWxJZBocLlByb2R1Y3REZXRhaWxSZXNwb25zZVJlc3Vs",
-            "dBIxCgZHZXRBbGwSEy5Qcm9kdWN0RGV0YWlsRW1wdHkaEi5MaXN0UHJvZHVj",
-            "dERldGFpbBI2CgZVcGRhdGUSDi5Qcm9kdWN0RGV0YWlsGhwuUHJvZHVjdERl",
-            "dGFpbFJlc3BvbnNlUmVzdWx0QhmqAhZOVFFUUkFJTklOR19QUkouUHJvdG9z",
-            "YgZwcm90bzM="));
+            "L3RpbWVzdGFtcC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnBy",
+            "b3RvIhQKElByb2R1Y3REZXRhaWxFbXB0eSL7AgoNUHJvZHVjdERldGFpbBIK",
+            "CgJJZBgBIAEoBRIrCgVQcmljZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIrCgVDb2xvchgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIwCgxTdGFydGluZ0RhdGUYBCABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEi8KC0Nsb3NpbmdEYXRlGAUgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcBIsCgZNYWRlQnkYBiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSEQoJUHJvZHVjdElkGAcgASgFEi8KC0Ny",
+            "ZWF0ZWREYXRlGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIv",
+            "CgtVcGRhdGVkRGF0ZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXAiSwobUHJvZHVjdERldGFpbFJlc3BvbnNlUmVzdWx0EhwKBGl0ZW0YASAB",
+            "KAsyDi5Qcm9kdWN0RGV0YWlsEg4KBnJlc3VsdBgCIAEoCCIdCg9Qcm9kdWN0",
+            "RGV0YWlsSWQSCgoCSWQYASABKAUiMgoRTGlzdFByb2R1Y3REZXRhaWwSHQoF",
+            "aXRlbXMYASADKAsyDi5Qcm9kdWN0RGV0YWlsMvUBChZQcm9kdWN0RGV0YWls",
+            "c1NlcnZpY2VzEjYKBkNyZWF0ZRIOLlByb2R1Y3REZXRhaWwaHC5Qcm9kdWN0",
+            "RGV0YWlsUmVzcG9uc2VSZXN1bHQSOAoGRGVsZXRlEhAuUHJvZHVjdERldGFp",
+            "bElkGhwuUHJvZHVjdERldGFpbFJlc3BvbnNlUmVzdWx0EjEKBkdldEFsbBIT",
+            "LlByb2R1Y3REZXRhaWxFbXB0eRoSLkxpc3RQcm9kdWN0RGV0YWlsEjYKBlVw",
+            "ZGF0ZRIOLlByb2R1Y3REZXRhaWwaHC5Qcm9kdWN0RGV0YWlsUmVzcG9uc2VS",
+            "ZXN1bHRCGaoCFk5UUVRSQUlOSU5HX1BSSi5Qcm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty), global::NTQTRAINING_PRJ.Protos.ProductDetailEmpty.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::NTQTRAINING_PRJ.Protos.ProductDetail), global::NTQTRAINING_PRJ.Protos.ProductDetail.Parser, new[]{ "Id", "Price", "Color", "StartingDate", "ClosingDate", "MadeBy", "ProductId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
@@ -244,11 +246,11 @@ namespace NTQTRAINING_PRJ.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProductDetail(ProductDetail other) : this() {
       id_ = other.id_;
-      price_ = other.price_;
-      color_ = other.color_;
+      Price = other.Price;
+      Color = other.Color;
       startingDate_ = other.startingDate_ != null ? other.startingDate_.Clone() : null;
       closingDate_ = other.closingDate_ != null ? other.closingDate_.Clone() : null;
-      madeBy_ = other.madeBy_;
+      MadeBy = other.MadeBy;
       productId_ = other.productId_;
       createdDate_ = other.createdDate_ != null ? other.createdDate_.Clone() : null;
       updatedDate_ = other.updatedDate_ != null ? other.updatedDate_.Clone() : null;
@@ -275,27 +277,31 @@ namespace NTQTRAINING_PRJ.Protos {
 
     /// <summary>Field number for the "Price" field.</summary>
     public const int PriceFieldNumber = 2;
-    private string price_ = "";
+    private static readonly pb::FieldCodec<string> _single_price_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string price_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Price {
       get { return price_; }
       set {
-        price_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        price_ = value;
       }
     }
 
+
     /// <summary>Field number for the "Color" field.</summary>
     public const int ColorFieldNumber = 3;
-    private string color_ = "";
+    private static readonly pb::FieldCodec<string> _single_color_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string color_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Color {
       get { return color_; }
       set {
-        color_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        color_ = value;
       }
     }
+
 
     /// <summary>Field number for the "StartingDate" field.</summary>
     public const int StartingDateFieldNumber = 4;
@@ -323,15 +329,17 @@ namespace NTQTRAINING_PRJ.Protos {
 
     /// <summary>Field number for the "MadeBy" field.</summary>
     public const int MadeByFieldNumber = 6;
-    private string madeBy_ = "";
+    private static readonly pb::FieldCodec<string> _single_madeBy_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string madeBy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MadeBy {
       get { return madeBy_; }
       set {
-        madeBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        madeBy_ = value;
       }
     }
+
 
     /// <summary>Field number for the "ProductId" field.</summary>
     public const int ProductIdFieldNumber = 7;
@@ -401,11 +409,11 @@ namespace NTQTRAINING_PRJ.Protos {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
-      if (Price.Length != 0) hash ^= Price.GetHashCode();
-      if (Color.Length != 0) hash ^= Color.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      if (color_ != null) hash ^= Color.GetHashCode();
       if (startingDate_ != null) hash ^= StartingDate.GetHashCode();
       if (closingDate_ != null) hash ^= ClosingDate.GetHashCode();
-      if (MadeBy.Length != 0) hash ^= MadeBy.GetHashCode();
+      if (madeBy_ != null) hash ^= MadeBy.GetHashCode();
       if (ProductId != 0) hash ^= ProductId.GetHashCode();
       if (createdDate_ != null) hash ^= CreatedDate.GetHashCode();
       if (updatedDate_ != null) hash ^= UpdatedDate.GetHashCode();
@@ -431,13 +439,11 @@ namespace NTQTRAINING_PRJ.Protos {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (Price.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Price);
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(output, Price);
       }
-      if (Color.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Color);
+      if (color_ != null) {
+        _single_color_codec.WriteTagAndValue(output, Color);
       }
       if (startingDate_ != null) {
         output.WriteRawTag(34);
@@ -447,9 +453,8 @@ namespace NTQTRAINING_PRJ.Protos {
         output.WriteRawTag(42);
         output.WriteMessage(ClosingDate);
       }
-      if (MadeBy.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(MadeBy);
+      if (madeBy_ != null) {
+        _single_madeBy_codec.WriteTagAndValue(output, MadeBy);
       }
       if (ProductId != 0) {
         output.WriteRawTag(56);
@@ -477,13 +482,11 @@ namespace NTQTRAINING_PRJ.Protos {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (Price.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Price);
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(ref output, Price);
       }
-      if (Color.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Color);
+      if (color_ != null) {
+        _single_color_codec.WriteTagAndValue(ref output, Color);
       }
       if (startingDate_ != null) {
         output.WriteRawTag(34);
@@ -493,9 +496,8 @@ namespace NTQTRAINING_PRJ.Protos {
         output.WriteRawTag(42);
         output.WriteMessage(ClosingDate);
       }
-      if (MadeBy.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(MadeBy);
+      if (madeBy_ != null) {
+        _single_madeBy_codec.WriteTagAndValue(ref output, MadeBy);
       }
       if (ProductId != 0) {
         output.WriteRawTag(56);
@@ -522,11 +524,11 @@ namespace NTQTRAINING_PRJ.Protos {
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
-      if (Price.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Price);
+      if (price_ != null) {
+        size += _single_price_codec.CalculateSizeWithTag(Price);
       }
-      if (Color.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Color);
+      if (color_ != null) {
+        size += _single_color_codec.CalculateSizeWithTag(Color);
       }
       if (startingDate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartingDate);
@@ -534,8 +536,8 @@ namespace NTQTRAINING_PRJ.Protos {
       if (closingDate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClosingDate);
       }
-      if (MadeBy.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MadeBy);
+      if (madeBy_ != null) {
+        size += _single_madeBy_codec.CalculateSizeWithTag(MadeBy);
       }
       if (ProductId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProductId);
@@ -561,11 +563,15 @@ namespace NTQTRAINING_PRJ.Protos {
       if (other.Id != 0) {
         Id = other.Id;
       }
-      if (other.Price.Length != 0) {
-        Price = other.Price;
+      if (other.price_ != null) {
+        if (price_ == null || other.Price != "") {
+          Price = other.Price;
+        }
       }
-      if (other.Color.Length != 0) {
-        Color = other.Color;
+      if (other.color_ != null) {
+        if (color_ == null || other.Color != "") {
+          Color = other.Color;
+        }
       }
       if (other.startingDate_ != null) {
         if (startingDate_ == null) {
@@ -579,8 +585,10 @@ namespace NTQTRAINING_PRJ.Protos {
         }
         ClosingDate.MergeFrom(other.ClosingDate);
       }
-      if (other.MadeBy.Length != 0) {
-        MadeBy = other.MadeBy;
+      if (other.madeBy_ != null) {
+        if (madeBy_ == null || other.MadeBy != "") {
+          MadeBy = other.MadeBy;
+        }
       }
       if (other.ProductId != 0) {
         ProductId = other.ProductId;
@@ -617,11 +625,17 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           }
           case 18: {
-            Price = input.ReadString();
+            string value = _single_price_codec.Read(input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
             break;
           }
           case 26: {
-            Color = input.ReadString();
+            string value = _single_color_codec.Read(input);
+            if (color_ == null || value != "") {
+              Color = value;
+            }
             break;
           }
           case 34: {
@@ -639,7 +653,10 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           }
           case 50: {
-            MadeBy = input.ReadString();
+            string value = _single_madeBy_codec.Read(input);
+            if (madeBy_ == null || value != "") {
+              MadeBy = value;
+            }
             break;
           }
           case 56: {
@@ -680,11 +697,17 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           }
           case 18: {
-            Price = input.ReadString();
+            string value = _single_price_codec.Read(ref input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
             break;
           }
           case 26: {
-            Color = input.ReadString();
+            string value = _single_color_codec.Read(ref input);
+            if (color_ == null || value != "") {
+              Color = value;
+            }
             break;
           }
           case 34: {
@@ -702,7 +725,10 @@ namespace NTQTRAINING_PRJ.Protos {
             break;
           }
           case 50: {
-            MadeBy = input.ReadString();
+            string value = _single_madeBy_codec.Read(ref input);
+            if (madeBy_ == null || value != "") {
+              MadeBy = value;
+            }
             break;
           }
           case 56: {

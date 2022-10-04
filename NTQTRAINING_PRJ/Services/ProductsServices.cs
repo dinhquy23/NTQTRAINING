@@ -30,8 +30,6 @@ namespace NTQTRAINING_PRJ.Services
                              UpdatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(prod.UpdatedDate, DateTimeKind.Utc)),
                          };
             listProduct.Items.AddRange(result.ToArray());
-
-
             return Task.FromResult(listProduct);
         }
 
@@ -70,24 +68,40 @@ namespace NTQTRAINING_PRJ.Services
 
         public override Task<Protos.ProductResponseResult> Delete(ProductId request, ServerCallContext context)
         {
-            var product = NtqTrainingContext.Products.FirstOrDefault(c => c.Id == request.Id);
-            if (product == null)
+            using (var transaction = NtqTrainingContext.Database.BeginTransaction())
             {
-                return Task.FromResult(new ProductResponseResult
+                try
                 {
-                    Item = new Protos.Product(),
-                    Result = false
-                });
-            }
-            else
-            {
-                NtqTrainingContext.Products.Remove(product);
-                NtqTrainingContext.SaveChanges();
-                return Task.FromResult(new ProductResponseResult
+                    var product = NtqTrainingContext.Products.FirstOrDefault(c => c.Id == request.Id);
+                    if (product == null)
+                    {
+                        return Task.FromResult(new ProductResponseResult
+                        {
+                            Item = new Protos.Product(),
+                            Result = false
+                        });
+                    }
+                    else
+                    {
+                        NtqTrainingContext.Products.Remove(product);
+                        NtqTrainingContext.SaveChanges();
+                        transaction.Commit();
+                        return Task.FromResult(new ProductResponseResult
+                        {
+                            Item = new Protos.Product(),
+                            Result = true
+                        });
+                    }
+                }
+                catch
                 {
-                    Item = new Protos.Product(),
-                    Result = true
-                });
+                    transaction.Rollback();
+                    return Task.FromResult(new ProductResponseResult
+                    {
+                        Item = new Protos.Product(),
+                        Result = false
+                    });
+                }
             }
         }
 

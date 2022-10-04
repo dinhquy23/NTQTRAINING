@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "WinFormsClient";
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
 
 service ProductDetailsServices{
 	rpc Create(ProductDetail) returns(ProductDetailResponseResult);
@@ -15,11 +16,11 @@ message ProductDetailEmpty {}
 message ProductDetail
 {
 	int32 Id=1;
-    string Price=2;
-    string Color=3;
+    google.protobuf.StringValue Price=2;
+    google.protobuf.StringValue Color=3;
     google.protobuf.Timestamp StartingDate=4;
     google.protobuf.Timestamp ClosingDate=5;
-    string MadeBy=6;
+    google.protobuf.StringValue MadeBy=6;
     int32 ProductId=7;
     google.protobuf.Timestamp CreatedDate=8;
     google.protobuf.Timestamp UpdatedDate=9;
