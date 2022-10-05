@@ -81,7 +81,6 @@ namespace WinFormsClient
             return dt;
         }
 
-
         private void btnCreate_Click(object sender, EventArgs e)
         {
             ProductDetail product = new ProductDetail();
