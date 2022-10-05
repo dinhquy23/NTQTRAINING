@@ -119,18 +119,17 @@ namespace NTQTRAINING_PRJ.Services
             }
             else
             {
-                Protos.Category category1 = new Protos.Category
-                {
-                    Id = category.Id,
-                    Name = category.Name,
-                    TagName = category.TagName,
-                    Active = category.Active ?? true,
-                    CreatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(category.CreatedDate, DateTimeKind.Utc)),
-                    UpdatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(category.UpdatedDate, DateTimeKind.Utc)),
-                };
                 return Task.FromResult(new Protos.ResponseSesult
                 {
-                    Item = category1,
+                    Item = new Protos.Category
+                    {
+                        Id = category.Id,
+                        Name = category.Name,
+                        TagName = category.TagName,
+                        Active = category.Active ?? true,
+                        CreatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(category.CreatedDate, DateTimeKind.Utc)),
+                        UpdatedDate = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.SpecifyKind(category.UpdatedDate, DateTimeKind.Utc)),
+                    },
                     Result = true
                 });
             }
@@ -149,6 +148,7 @@ namespace NTQTRAINING_PRJ.Services
             }
             else
             {
+                category.Id = request.Id;
                 category.Name = request.Name;
                 category.TagName = request.TagName;
                 category.Active = request.Active;

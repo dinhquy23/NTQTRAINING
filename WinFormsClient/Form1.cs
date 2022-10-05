@@ -164,11 +164,22 @@ namespace WinFormsClient
         {
             CategoryId categoryID = new CategoryId();
             categoryID.Id = int.Parse(txtSearch.Text);
+
+
             ResponseSesult newRespon = client.GetCategoryById(categoryID);
 
-            ListCategory listCategory = new ListCategory();
-            listCategory.Items.Add(newRespon.Item);
-            dgvCategory.DataSource = ToDataTable(listCategory);
+            if(newRespon.Result == true)
+            {
+                ListCategory listCategory = new ListCategory();
+                listCategory.Items.Add(newRespon.Item);
+                dgvCategory.DataSource = ToDataTable(listCategory);
+            }
+            else
+            {
+                MessageBox.Show("Category Not Exists!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvCategory.DataSource = null;
+            }
+           
         }
     }
 }
